@@ -1,10 +1,7 @@
-using System;
-using System.Linq;
 using System.Threading.Tasks;
 using Lifepaper.Data;
 using Lifepaper.Models;
 using Lifepaper.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,15 +23,20 @@ namespace Lifepaper.Controllers.Api
         [HttpPost("enviarCorreoRecuperacion")]
         public async Task<IActionResult> EnviarCorreoRecuperacion([FromBody] RecuperacionContraseñaRequest request)
         {
+            if (string.IsNullOrEmpty(request.Correo))
+            {
+                return BadRequest("El correo electrónico es requerido.");
+            }
+
             var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Correo == request.Correo);
             if (usuario == null)
             {
                 return NotFound("No se encontró un usuario con este correo.");
             }
 
-            // Enviar correo electrónico con la contraseña
+            // Enviar correo electrónico con un token de restablecimiento de contraseña sería más seguro
             var emailSubject = "Recuperación de contraseña";
-            var emailBody = $"Su contraseña es: {usuario.Contraseña}";
+            var emailBody = $"Su contraseña es: {usuario.Contraseña}"; // ¡No recomendado en producción!
             await _emailService.SendAsync(request.Correo, emailSubject, emailBody);
 
             return Ok("Correo enviado con éxito.");

@@ -1,35 +1,38 @@
-using System.Security.Claims;
-using System.Text;
-using System.Text.Json.Serialization;
-using Microsoft.EntityFrameworkCore;
+using System;
 using Lifepaper.Data;
-using MailerSend.AspNetCore;
 using Lifepaper.Services;
+using MailerSend.AspNetCore;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
-;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Configurar servicios
 builder.Services.AddControllersWithViews();
-// SQL Service
-builder.Services.AddControllers();
+
+// Configurar DbContext para Lifepaper
 builder.Services.AddDbContext<BaseContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("MySqlConnection"),
     new MySqlServerVersion(new Version(8, 0, 20))));
-builder.Services.Configure<MailerSendOptions>(Configuration.GetSection("MailerSend"));
+
+// Configurar MailerSend
+builder.Services.Configure<MailerSendOptions>(builder.Configuration.GetSection("MailerSend"));
 builder.Services.AddMailerSend();
 
-       |
-        builder.Services.AddTransient<EmailService>();
+// Agregar servicio de correo electrónico
+builder.Services.AddTransient<EmailService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configurar el pipeline de solicitud HTTP
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -37,7 +40,6 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
 app.UseAuthorization();
 
 app.MapControllerRoute(

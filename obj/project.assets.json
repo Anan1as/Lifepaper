@@ -1461,19 +1461,19 @@
     ]
   },
   "packageFolders": {
-    "/home/riwip5-004/.nuget/packages/": {}
+    "/home/riwip5-035/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/riwip5-004/Documents/leo/Lifepaper/Lifepaper.csproj",
+      "projectUniqueName": "/home/riwip5-035/Documents/leo/Lifepaper/Lifepaper.csproj",
       "projectName": "Lifepaper",
-      "projectPath": "/home/riwip5-004/Documents/leo/Lifepaper/Lifepaper.csproj",
-      "packagesPath": "/home/riwip5-004/.nuget/packages/",
-      "outputPath": "/home/riwip5-004/Documents/leo/Lifepaper/obj/",
+      "projectPath": "/home/riwip5-035/Documents/leo/Lifepaper/Lifepaper.csproj",
+      "packagesPath": "/home/riwip5-035/.nuget/packages/",
+      "outputPath": "/home/riwip5-035/Documents/leo/Lifepaper/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/riwip5-004/.nuget/NuGet/NuGet.Config"
+        "/home/riwip5-035/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

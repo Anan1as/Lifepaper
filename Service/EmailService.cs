@@ -1,40 +1,47 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MailerSend;
-using MailKit.Net.Smtp;
-using MailKit.Security;
-using MimeKit;
-using MimeKit.Text;
+using MailerSend.Models;
 using Lifepaper.Models;
-using System.Threading.Tasks;
-using MailerSend.AspNetCore;
+ // Asegúrate de tener esta directiva para los modelos de MailerSend
+
 
 namespace Lifepaper.Services
 {
     public class EmailService
     {
-        private readonly MailerSendService _mailerSend;
+        private readonly MailerSend.AspNetCore.MailerSendService _mailerSend;
 
-        public EmailService(MailerSendService mailerSend)
+        public EmailService(MailerSend.AspNetCore.MailerSendService mailerSend)
         {
             _mailerSend = mailerSend;
         }
 
         public async Task SendAsync(string to, string subject, string body)
         {
-            var recipients = new List<Recipient>
+            var recipient = new Recipient(to);
+
+            var correo = new Correo
             {
-                new Recipient(to)
+                From = new From
+                {
+                    Email = "yeifry.121@gmail.com",
+                    Name = "Yeifry Leandro"
+                },
+                To = new List<Recipient> { recipient },
+                Subject = subject,
+                Text = body
             };
 
-            var email = new Email.Builder()
-                .From("mail@domain.com")
-                .Subject(subject)
-                .Text(body)
-                .To(recipients)
-                .Build();
+            var response = await _mailerSend.Correo.SendAsync(email);
 
-            await _mailerSend.SendEmailAsync(email);
+            if (!response.IsSuccessStatusCode)
+            {
+                // Handle error
+                var errorMessage = await response.Content.ReadAsStringAsync();
+                throw new ApplicationException($"Failed to send email: {errorMessage}");
+            }
         }
     }
 }
