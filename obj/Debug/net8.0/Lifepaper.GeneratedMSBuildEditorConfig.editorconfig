@@ -9,39 +9,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Lifepaper
 build_property.RootNamespace = Lifepaper
-build_property.ProjectDir = /home/riwip5-004/Documents/leo/Lifepaper/
+build_property.ProjectDir = /home/riwip5-011/Music/Lifepaper/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/riwip5-004/Documents/leo/Lifepaper
+build_property.MSBuildProjectDirectory = /home/riwip5-011/Music/Lifepaper
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/riwip5-004/Documents/leo/Lifepaper/Views/Home/Index.cshtml]
+[/home/riwip5-011/Music/Lifepaper/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/riwip5-004/Documents/leo/Lifepaper/Views/Home/Privacy.cshtml]
+[/home/riwip5-011/Music/Lifepaper/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/riwip5-004/Documents/leo/Lifepaper/Views/Shared/Error.cshtml]
+[/home/riwip5-011/Music/Lifepaper/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/riwip5-004/Documents/leo/Lifepaper/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/home/riwip5-011/Music/Lifepaper/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/riwip5-004/Documents/leo/Lifepaper/Views/_ViewImports.cshtml]
+[/home/riwip5-011/Music/Lifepaper/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riwip5-011/Music/Lifepaper/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/riwip5-004/Documents/leo/Lifepaper/Views/_ViewStart.cshtml]
+[/home/riwip5-011/Music/Lifepaper/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/riwip5-004/Documents/leo/Lifepaper/Views/Shared/_Layout.cshtml]
+[/home/riwip5-011/Music/Lifepaper/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-qpktmhy0ya
