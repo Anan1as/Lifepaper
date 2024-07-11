@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lifepaper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a3c6705f8f647fd3f30ce714ab665ab8c400e17")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e4807ed1c07fe5f9c803d886d675fbb8a3eccf2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lifepaper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lifepaper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/riwip5-011/Music/Lifepaper/Lifepaper.csproj": {}
+    "/home/riwip5-034/Documents/Lifepaper/Lifepaper.csproj": {}
   },
   "projects": {
-    "/home/riwip5-011/Music/Lifepaper/Lifepaper.csproj": {
+    "/home/riwip5-034/Documents/Lifepaper/Lifepaper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/riwip5-011/Music/Lifepaper/Lifepaper.csproj",
+        "projectUniqueName": "/home/riwip5-034/Documents/Lifepaper/Lifepaper.csproj",
         "projectName": "Lifepaper",
-        "projectPath": "/home/riwip5-011/Music/Lifepaper/Lifepaper.csproj",
-        "packagesPath": "/home/riwip5-011/.nuget/packages/",
-        "outputPath": "/home/riwip5-011/Music/Lifepaper/obj/",
+        "projectPath": "/home/riwip5-034/Documents/Lifepaper/Lifepaper.csproj",
+        "packagesPath": "/home/riwip5-034/.nuget/packages/",
+        "outputPath": "/home/riwip5-034/Documents/Lifepaper/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/riwip5-011/.nuget/NuGet/NuGet.Config"
+          "/home/riwip5-034/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
