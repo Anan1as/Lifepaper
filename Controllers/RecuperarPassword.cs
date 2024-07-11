@@ -34,17 +34,11 @@ namespace Lifepaper.Controllers.Api
                 return NotFound("No se encontró un usuario con este correo.");
             }
 
-            // Enviar correo electrónico con un token de restablecimiento de contraseña sería más seguro
             var emailSubject = "Recuperación de contraseña";
             var emailBody = $"Su contraseña es: {usuario.Contraseña}"; // ¡No recomendado en producción!
             await _emailService.SendAsync(request.Correo, emailSubject, emailBody);
 
             return Ok("Correo enviado con éxito.");
         }
-    }
-
-    public class RecuperacionContraseñaRequest
-    {
-        public string Correo { get; set; }
     }
 }

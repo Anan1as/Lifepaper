@@ -9,11 +9,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Configurar servicios
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
 
 // Configurar DbContext para Lifepaper
 builder.Services.AddDbContext<BaseContext>(options =>
@@ -42,8 +41,6 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllers();
 
 app.Run();

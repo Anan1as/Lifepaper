@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using MailerSend;
 using MailerSend.Models;
-using Lifepaper.Models;
- // Asegúrate de tener esta directiva para los modelos de MailerSend
-
 
 namespace Lifepaper.Services
 {
@@ -22,7 +19,7 @@ namespace Lifepaper.Services
         {
             var recipient = new Recipient(to);
 
-            var correo = new Correo
+            var email = new Email
             {
                 From = new From
                 {
@@ -34,11 +31,10 @@ namespace Lifepaper.Services
                 Text = body
             };
 
-            var response = await _mailerSend.Correo.SendAsync(email);
+            var response = await _mailerSend.Email.SendAsync(email);
 
             if (!response.IsSuccessStatusCode)
             {
-                // Handle error
                 var errorMessage = await response.Content.ReadAsStringAsync();
                 throw new ApplicationException($"Failed to send email: {errorMessage}");
             }
