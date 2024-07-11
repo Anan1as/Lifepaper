@@ -8,5 +8,7 @@ namespace Lifepaper.Data
         public BaseContext(DbContextOptions<BaseContext> options): base(options)
         {
         }
+
+        public DbSet<User> Users { get; set; }
     }
 }
