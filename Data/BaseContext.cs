@@ -1,3 +1,4 @@
+using Lifepaper.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
