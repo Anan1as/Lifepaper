@@ -1,4 +1,4 @@
--- Active: 1720640795143@@bxrvrak0bv02ibdgxkki-mysql.services.clever-cloud.com@3306@bxrvrak0bv02ibdgxkki
+-- Active: 1720660841469@@bxrvrak0bv02ibdgxkki-mysql.services.clever-cloud.com@3306@bxrvrak0bv02ibdgxkki
 CREATE TABLE Usuarios (
     UserId INT PRIMARY KEY AUTO_INCREMENT,
     Nombre VARCHAR(50),
@@ -9,6 +9,10 @@ CREATE TABLE Usuarios (
     GoogleId VARCHAR(50) NULL,
     Nacionalidad VARCHAR(50)
 );
+
+INSERT INTO `Usuarios`(`Nombre`, `Apellido`, `Correo`, `Contraseña`, `Nacionalidad`) VALUES
+("Daniel", "Gómez", "test@test.com", "1234", "Colombiano");
+
 CREATE TABLE HojasDeVida (
     HojaDeVidaId INT PRIMARY KEY AUTO_INCREMENT,
     UserId INT,
@@ -51,3 +55,4 @@ CREATE TABLE HabilidadesCompetencias (
     FOREIGN KEY (HojaDeVidaId) REFERENCES HojasDeVida(HojaDeVidaId)
 );
 
+SELECT * FROM `Usuarios`;
