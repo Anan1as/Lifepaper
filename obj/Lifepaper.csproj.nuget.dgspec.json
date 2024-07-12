@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yeifr\\OneDrive\\Documentos\\leo\\Lifepaper\\Lifepaper.csproj": {}
+    "/home/riwip5-039/Documents/leo/Lifepaper/Lifepaper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yeifr\\OneDrive\\Documentos\\leo\\Lifepaper\\Lifepaper.csproj": {
+    "/home/riwip5-039/Documents/leo/Lifepaper/Lifepaper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yeifr\\OneDrive\\Documentos\\leo\\Lifepaper\\Lifepaper.csproj",
+        "projectUniqueName": "/home/riwip5-039/Documents/leo/Lifepaper/Lifepaper.csproj",
         "projectName": "Lifepaper",
-        "projectPath": "C:\\Users\\yeifr\\OneDrive\\Documentos\\leo\\Lifepaper\\Lifepaper.csproj",
-        "packagesPath": "C:\\Users\\yeifr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yeifr\\OneDrive\\Documentos\\leo\\Lifepaper\\obj\\",
+        "projectPath": "/home/riwip5-039/Documents/leo/Lifepaper/Lifepaper.csproj",
+        "packagesPath": "/home/riwip5-039/.nuget/packages/",
+        "outputPath": "/home/riwip5-039/Documents/leo/Lifepaper/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yeifr\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/riwip5-039/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -87,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
