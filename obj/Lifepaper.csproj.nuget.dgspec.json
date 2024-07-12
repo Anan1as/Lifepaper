@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/riwip5-035/Documents/leo/Lifepaper/Lifepaper.csproj": {}
+    "/home/riwip5-044/Documents/Leo/Lifepaper/Lifepaper.csproj": {}
   },
   "projects": {
-    "/home/riwip5-035/Documents/leo/Lifepaper/Lifepaper.csproj": {
+    "/home/riwip5-044/Documents/Leo/Lifepaper/Lifepaper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/riwip5-035/Documents/leo/Lifepaper/Lifepaper.csproj",
+        "projectUniqueName": "/home/riwip5-044/Documents/Leo/Lifepaper/Lifepaper.csproj",
         "projectName": "Lifepaper",
-        "projectPath": "/home/riwip5-035/Documents/leo/Lifepaper/Lifepaper.csproj",
-        "packagesPath": "/home/riwip5-035/.nuget/packages/",
-        "outputPath": "/home/riwip5-035/Documents/leo/Lifepaper/obj/",
+        "projectPath": "/home/riwip5-044/Documents/Leo/Lifepaper/Lifepaper.csproj",
+        "packagesPath": "/home/riwip5-044/.nuget/packages/",
+        "outputPath": "/home/riwip5-044/Documents/Leo/Lifepaper/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/riwip5-035/.nuget/NuGet/NuGet.Config"
+          "/home/riwip5-044/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,17 +32,18 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "MailKit": {
-              "target": "Package",
-              "version": "[4.7.0, )"
-            },
-            "MailerSend.AspNetCore": {
+            "DannyKentala.MailerSendApi": {
               "target": "Package",
               "version": "[1.0.0, )"
             },
@@ -57,10 +58,6 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.7, )"
-            },
-            "MimeKit": {
-              "target": "Package",
-              "version": "[4.7.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
@@ -86,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/riwip5-044/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

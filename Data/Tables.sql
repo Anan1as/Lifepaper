@@ -1,4 +1,4 @@
--- Active: 1720640795143@@bxrvrak0bv02ibdgxkki-mysql.services.clever-cloud.com@3306@bxrvrak0bv02ibdgxkki
+-- Active: 1720740987905@@bxrvrak0bv02ibdgxkki-mysql.services.clever-cloud.com@3306@bxrvrak0bv02ibdgxkki
 CREATE TABLE Usuarios (
     UserId INT PRIMARY KEY AUTO_INCREMENT,
     Nombre VARCHAR(50),
@@ -51,3 +51,6 @@ CREATE TABLE HabilidadesCompetencias (
     FOREIGN KEY (HojaDeVidaId) REFERENCES HojasDeVida(HojaDeVidaId)
 );
 
+
+INSERT INTO Usuarios (Nombre, Apellido, Correo, Contraseña, FechaRegistro)
+VALUES ('Yeifry Leandro', 'Vargas Rivera', 'yeifry.121@gmail.com', '12345', NOW());

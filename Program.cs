@@ -1,13 +1,13 @@
 using System;
 using Lifepaper.Data;
 using Lifepaper.Services;
-using MailerSend.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MailerSendApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,12 +19,11 @@ builder.Services.AddDbContext<BaseContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("MySqlConnection"),
     new MySqlServerVersion(new Version(8, 0, 20))));
 
-// Configurar MailerSend
-builder.Services.Configure<MailerSendOptions>(builder.Configuration.GetSection("MailerSend"));
-builder.Services.AddMailerSend();
+// Configurar EmailService
+builder.Services.AddScoped<MailerSendService>();
+builder.Services.AddScoped<EmailService>();
 
-// Agregar servicio de correo electrónico
-builder.Services.AddTransient<EmailService>();
+
 
 var app = builder.Build();
 

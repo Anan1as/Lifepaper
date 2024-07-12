@@ -8,6 +8,8 @@ namespace Lifepaper.Data
         public BaseContext(DbContextOptions<BaseContext> options) : base(options) { }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

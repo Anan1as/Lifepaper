@@ -1,43 +1,57 @@
 using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Threading.Tasks;
-using MailerSend;
-using MailerSend.Models;
+using Lifepaper.Models;
+using Lifepaper.Data;
+using MailerSendApi;
+using MailerSendApi.Models;
 
 namespace Lifepaper.Services
 {
     public class EmailService
     {
-        private readonly MailerSend.AspNetCore.MailerSendService _mailerSend;
+        private readonly MailerSendService _mailerSendService;
+        private readonly BaseContext _context;
 
-        public EmailService(MailerSend.AspNetCore.MailerSendService mailerSend)
+        public EmailService(BaseContext context, MailerSendService mailerSendService)
         {
-            _mailerSend = mailerSend;
+            _context = context;
+            _mailerSendService = mailerSendService;
         }
 
         public async Task SendAsync(string to, string subject, string body)
         {
-            var recipient = new Recipient(to);
-
-            var email = new Email
+            // Configurar el destinatario del correo
+            var recipients = new List<Recipient>
             {
-                From = new From
-                {
-                    Email = "yeifry.121@gmail.com",
-                    Name = "Yeifry Leandro"
-                },
-                To = new List<Recipient> { recipient },
+                new Recipient { Correo = to }
+            };
+
+            // Configurar el mensaje de correo
+            var newEmail = new Email
+            {
+                
                 Subject = subject,
                 Text = body
             };
 
-            var response = await _mailerSend.Email.SendAsync(email);
-
-            if (!response.IsSuccessStatusCode)
+            // Enviar el correo electrónico
+           
+            try
             {
-                var errorMessage = await response.Content.ReadAsStringAsync();
-                throw new ApplicationException($"Failed to send email: {errorMessage}");
+                string mailInfo = await _mailerSendService.SendEmail(newEmail);
             }
+            catch (Exception ex)
+            {
+                throw new ApplicationException($"Failed to send email: {ex.Message}");
+            }
+
+            
+          
+           
+              
+            
         }
     }
 }
