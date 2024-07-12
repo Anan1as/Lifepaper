@@ -1,34 +1,30 @@
-using System;
 using Lifepaper.Data;
+using Lifepaper.Models;
 using Lifepaper.Services;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using MailerSendApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configurar servicios
-builder.Services.AddControllers();
+// Agregar configuración de SmtpSettings
+builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
 
-// Configurar DbContext para Lifepaper
+// Agregar DbContext
 builder.Services.AddDbContext<BaseContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("MySqlConnection"),
-    new MySqlServerVersion(new Version(8, 0, 20))));
+    options.UseMySql(builder.Configuration.GetConnectionString("MySqlConnection"), 
+    new MySqlServerVersion(new Version(8, 0, 25))));
 
-// Configurar EmailService
-builder.Services.AddScoped<MailerSendService>();
+// Agregar servicios
 builder.Services.AddScoped<EmailService>();
-
-
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Configurar el pipeline de solicitud HTTP
-if (!app.Environment.IsDevelopment())
+// Configurar middleware
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+else
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
@@ -36,7 +32,6 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
 app.UseAuthorization();
 

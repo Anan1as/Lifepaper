@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/riwip5-044/Documents/Leo/Lifepaper/Lifepaper.csproj": {}
+    "C:\\Users\\yeifr\\OneDrive\\Documentos\\leo\\Lifepaper\\Lifepaper.csproj": {}
   },
   "projects": {
-    "/home/riwip5-044/Documents/Leo/Lifepaper/Lifepaper.csproj": {
+    "C:\\Users\\yeifr\\OneDrive\\Documentos\\leo\\Lifepaper\\Lifepaper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/riwip5-044/Documents/Leo/Lifepaper/Lifepaper.csproj",
+        "projectUniqueName": "C:\\Users\\yeifr\\OneDrive\\Documentos\\leo\\Lifepaper\\Lifepaper.csproj",
         "projectName": "Lifepaper",
-        "projectPath": "/home/riwip5-044/Documents/Leo/Lifepaper/Lifepaper.csproj",
-        "packagesPath": "/home/riwip5-044/.nuget/packages/",
-        "outputPath": "/home/riwip5-044/Documents/Leo/Lifepaper/obj/",
+        "projectPath": "C:\\Users\\yeifr\\OneDrive\\Documentos\\leo\\Lifepaper\\Lifepaper.csproj",
+        "packagesPath": "C:\\Users\\yeifr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yeifr\\OneDrive\\Documentos\\leo\\Lifepaper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/riwip5-044/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\yeifr\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[8.0.2, )"
@@ -83,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/riwip5-044/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

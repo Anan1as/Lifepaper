@@ -1,9 +1,11 @@
 namespace Lifepaper.Models
 {
-  public class Recipient
-  {
-    public string Correo { get; set; }
+ public class SmtpSettings
+{
+    public string Server { get; set; }
+    public int Port { get; set; }
+    public string Username { get; set; }
+    public string Password { get; set; }
+}
 
-   
-  }
 }

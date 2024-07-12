@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lifepaper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cf35cea117879a01f50d1ccc710ee29f7780ea8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c89732a079864ae207c93b44df674a0a8441989b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lifepaper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lifepaper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
