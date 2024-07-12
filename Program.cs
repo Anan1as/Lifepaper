@@ -1,12 +1,9 @@
-using System.Security.Claims;
-using System.Text;
-using System.Text.Json.Serialization;
-using Microsoft.EntityFrameworkCore;
 using Lifepaper.Data;
-
-;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+var configuration = builder.Configuration;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -15,6 +12,14 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<BaseContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("MySqlConnection"),
     new MySqlServerVersion(new Version(8, 0, 20))));
+
+// google Authentication Service
+services.AddAuthentication().AddGoogle(googleOptions =>
+{
+    googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
+    googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+});
+
 
 var app = builder.Build();
 
@@ -31,6 +36,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

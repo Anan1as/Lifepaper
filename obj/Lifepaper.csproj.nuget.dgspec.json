@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/riwip5-034/Documents/Lifepaper/Lifepaper.csproj": {}
+    "/home/riwip5-040/Documents/kemtch/Lifepaper/Lifepaper.csproj": {}
   },
   "projects": {
-    "/home/riwip5-034/Documents/Lifepaper/Lifepaper.csproj": {
+    "/home/riwip5-040/Documents/kemtch/Lifepaper/Lifepaper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/riwip5-034/Documents/Lifepaper/Lifepaper.csproj",
+        "projectUniqueName": "/home/riwip5-040/Documents/kemtch/Lifepaper/Lifepaper.csproj",
         "projectName": "Lifepaper",
-        "projectPath": "/home/riwip5-034/Documents/Lifepaper/Lifepaper.csproj",
-        "packagesPath": "/home/riwip5-034/.nuget/packages/",
-        "outputPath": "/home/riwip5-034/Documents/Lifepaper/obj/",
+        "projectPath": "/home/riwip5-040/Documents/kemtch/Lifepaper/Lifepaper.csproj",
+        "packagesPath": "/home/riwip5-040/.nuget/packages/",
+        "outputPath": "/home/riwip5-040/Documents/kemtch/Lifepaper/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/riwip5-034/.nuget/NuGet/NuGet.Config"
+          "/home/riwip5-040/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -38,9 +38,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
