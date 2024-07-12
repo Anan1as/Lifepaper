@@ -35,7 +35,7 @@ namespace Lifepaper.Controllers.Api
             }
 
             var emailSubject = "Recuperación de contraseña";
-            var emailBody = $"Su contraseña es: {usuario.Contraseña}"; // ¡No recomendado en producción!
+            var emailBody = $"Su contraseña es: {usuario.Contraseña}"; 
             await _emailService.SendAsync(request.Correo, emailSubject, emailBody);
 
             return Ok("Correo enviado con éxito.");
