@@ -1,4 +1,4 @@
--- Active: 1720660841469@@bxrvrak0bv02ibdgxkki-mysql.services.clever-cloud.com@3306@bxrvrak0bv02ibdgxkki
+-- Active: 1720743402803@@bxrvrak0bv02ibdgxkki-mysql.services.clever-cloud.com@3306@bxrvrak0bv02ibdgxkki
 CREATE TABLE Usuarios (
     UserId INT PRIMARY KEY AUTO_INCREMENT,
     Nombre VARCHAR(50),
