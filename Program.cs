@@ -1,10 +1,12 @@
+using System;
 using Lifepaper.Data;
-<<<<<<< HEAD
-=======
 using Lifepaper.Models;
 using Lifepaper.Services;
->>>>>>> 139770b9df4fc21712bc8134c2084cdc23dc0faf
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
@@ -15,7 +17,7 @@ builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpS
 
 // Agregar DbContext
 builder.Services.AddDbContext<BaseContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("MySqlConnection"), 
+    options.UseMySql(builder.Configuration.GetConnectionString("MySqlConnection"),
     new MySqlServerVersion(new Version(8, 0, 25))));
 
 // Agregar servicios
@@ -46,11 +48,6 @@ else
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-<<<<<<< HEAD
-
-app.UseAuthentication();
-=======
->>>>>>> 139770b9df4fc21712bc8134c2084cdc23dc0faf
 app.UseAuthorization();
 
 app.MapControllers();

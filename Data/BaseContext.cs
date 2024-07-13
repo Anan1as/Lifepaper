@@ -1,9 +1,6 @@
 using Lifepaper.Models;
 using Microsoft.EntityFrameworkCore;
-<<<<<<< HEAD
-=======
 using Lifepaper.Models;
->>>>>>> 139770b9df4fc21712bc8134c2084cdc23dc0faf
 
 namespace Lifepaper.Data
 {

@@ -1,7 +1,6 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Lifepaper.Models;
 using Lifepaper.Data;
+using System.Linq;
 
 namespace Lifepaper.Controllers;
 
