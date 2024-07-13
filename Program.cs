@@ -1,17 +1,26 @@
 using Lifepaper.Data;
+<<<<<<< HEAD
+=======
+using Lifepaper.Models;
+using Lifepaper.Services;
+>>>>>>> 139770b9df4fc21712bc8134c2084cdc23dc0faf
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 var configuration = builder.Configuration;
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-// SQL Service
-builder.Services.AddControllers();
+// Agregar configuración de SmtpSettings
+builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
+
+// Agregar DbContext
 builder.Services.AddDbContext<BaseContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("MySqlConnection"),
-    new MySqlServerVersion(new Version(8, 0, 20))));
+    options.UseMySql(builder.Configuration.GetConnectionString("MySqlConnection"), 
+    new MySqlServerVersion(new Version(8, 0, 25))));
+
+// Agregar servicios
+builder.Services.AddScoped<EmailService>();
+builder.Services.AddControllers();
 
 // google Authentication Service
 services.AddAuthentication().AddGoogle(googleOptions =>
@@ -23,24 +32,27 @@ services.AddAuthentication().AddGoogle(googleOptions =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+// Configurar middleware
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+else
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
+<<<<<<< HEAD
 
 app.UseAuthentication();
+=======
+>>>>>>> 139770b9df4fc21712bc8134c2084cdc23dc0faf
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllers();
 
 app.Run();

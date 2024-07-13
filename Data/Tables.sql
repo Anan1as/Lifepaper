@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 -- Active: 1720743402803@@bxrvrak0bv02ibdgxkki-mysql.services.clever-cloud.com@3306@bxrvrak0bv02ibdgxkki
+=======
+<<<<<<< HEAD
+-- Active: 1720743402803@@bxrvrak0bv02ibdgxkki-mysql.services.clever-cloud.com@3306@bxrvrak0bv02ibdgxkki
+=======
+-- Active: 1720740987905@@bxrvrak0bv02ibdgxkki-mysql.services.clever-cloud.com@3306@bxrvrak0bv02ibdgxkki
+>>>>>>> 7dcdd617ab1a6807130e7ecaf8dd89cb2a22c2c5
+>>>>>>> 139770b9df4fc21712bc8134c2084cdc23dc0faf
 CREATE TABLE Usuarios (
     UserId INT PRIMARY KEY AUTO_INCREMENT,
     Nombre VARCHAR(50),
@@ -54,5 +62,9 @@ CREATE TABLE HabilidadesCompetencias (
     Nivel ENUM('Básico', 'Intermedio', 'Avanzado'),
     FOREIGN KEY (HojaDeVidaId) REFERENCES HojasDeVida(HojaDeVidaId)
 );
+
+
+INSERT INTO Usuarios (Nombre, Apellido, Correo, Contraseña, FechaRegistro)
+VALUES ('Yeifry Leandro', 'Vargas Rivera', 'yeifry.121@gmail.com', '12345', NOW());
 
 SELECT * FROM `Usuarios`;
