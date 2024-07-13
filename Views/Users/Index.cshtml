@@ -1,0 +1,72 @@
+@{
+    Layout = null;
+    ViewData["Title"] = "Login";
+}
+
+<link rel="stylesheet" href="/css/signin.css">
+
+<body class="align">
+    <div class="grid">
+        <form asp-action="SignIn" method="post" class="form login">
+            <img src="/img/logo.png" alt="Logo_LifePaper">
+            <div class="form__field">
+                <label for="login__username">
+                    <svg class="icon">
+                        <use xlink:href="#icon-user"></use>
+                    </svg>
+                    <span class="hidden">Username</span>
+                </label>
+                <input autocomplete="username" id="login__username" type="text" name="username" class="form__input"
+                    placeholder="Username" required>
+            </div>
+            <div class="form__field">
+                <label for="login__password">
+                    <svg class="icon">
+                        <use xlink:href="#icon-lock"></use>
+                    </svg>
+                    <span class="hidden">Password</span>
+                </label>
+                <input id="login__password" type="password" name="password" class="form__input" placeholder="Password"
+                    required>
+            </div>
+            <div class="form__field">
+                <input type="submit" value="Sign In">
+            </div>
+            <p class="text--center"><a href="#" id="forgotPasswordLink">Forgot Password?</a></p>
+        </form>
+        <p class="text--center">Not a member? <a href="#">Sign up now</a>
+            <svg class="icon">
+                <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+        </p>
+    </div>
+
+    <!-- Password Recovery Modal -->
+    <div id="passwordRecoveryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: white;">Password Recovery</h2>
+            <form id="passwordRecoveryForm">
+                <div class="form__field">
+                    <label for="recovery__email">
+                        <svg class="icon">
+                            <use xlink:href="#icon-user"></use>
+                        </svg>
+                        <span class="hidden">Email</span>
+                    </label>
+                    <input id="recovery__email" type="email" name="email" class="form__input"
+                        placeholder="Enter your email" required>
+                </div>
+                <div class="form__field">
+                    <input type="submit" value="Send Email">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="icons">
+        <!-- SVG symbols -->
+    </svg>
+
+    <script src="/js/passwordRecovery.js"></script>
+</body>

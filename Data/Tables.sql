@@ -9,6 +9,10 @@ CREATE TABLE Usuarios (
     GoogleId VARCHAR(50) NULL,
     Nacionalidad VARCHAR(50)
 );
+
+INSERT INTO `Usuarios`(`Nombre`, `Apellido`, `Correo`, `Contraseña`, `Nacionalidad`) VALUES
+("Daniel", "Gómez", "test@test.com", "1234", "Colombiano");
+
 CREATE TABLE HojasDeVida (
     HojaDeVidaId INT PRIMARY KEY AUTO_INCREMENT,
     UserId INT,
@@ -54,3 +58,5 @@ CREATE TABLE HabilidadesCompetencias (
 
 INSERT INTO Usuarios (Nombre, Apellido, Correo, Contraseña, FechaRegistro)
 VALUES ('Yeifry Leandro', 'Vargas Rivera', 'yeifry.121@gmail.com', '12345', NOW());
+
+SELECT * FROM `Usuarios`;

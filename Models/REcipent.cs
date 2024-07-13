@@ -1,3 +1,4 @@
+//Smtp
 namespace Lifepaper.Models
 {
  public class SmtpSettings

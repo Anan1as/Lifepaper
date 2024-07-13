@@ -35,10 +35,12 @@ namespace Lifepaper.Controllers.Api
             }
 
             var emailSubject = "Recuperación de contraseña";
-            var emailBody = $"Su contraseña es: {usuario.Contraseña}"; 
+            var emailBody = $"Su contraseña es: {usuario.Contraseña}";
             await _emailService.SendAsync(request.Correo, emailSubject, emailBody);
 
-            return Ok("Correo enviado con éxito.");
+            return Ok(new { message = "Correo enviado con éxito." });
         }
     }
 }
+
+
