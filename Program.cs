@@ -10,12 +10,14 @@ builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpS
 
 // Agregar DbContext
 builder.Services.AddDbContext<BaseContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("MySqlConnection"), 
+    options.UseMySql(builder.Configuration.GetConnectionString("MySqlConnection"),
     new MySqlServerVersion(new Version(8, 0, 25))));
 
 // Agregar servicios
 builder.Services.AddScoped<EmailService>();
-builder.Services.AddControllers();
+
+// Agregar servicios de MVC, que incluyen ITempDataDictionaryFactory
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
@@ -35,6 +37,8 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Users}/{action=Index}/{id?}");
 
 app.Run();
