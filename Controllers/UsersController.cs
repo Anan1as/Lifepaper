@@ -32,9 +32,22 @@ public class UsersController : Controller
             return RedirectToAction("Index", "Home");
     }
 
-    public IActionResult SignUp()
+    public IActionResult Signup()
     {
         return View();
+    }
+
+
+    [HttpPost]
+    public IActionResult Signup(User user)
+    {
+        if (ModelState.IsValid)
+        {
+        user.FechaRegistro = DateTime.Now;
+        _context.Users.Add(user);
+        _context.SaveChanges();
+        return RedirectToAction("Home");
+        }
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
