@@ -21,23 +21,9 @@ public class UsersController : Controller
     public IActionResult SignIn(string username, string password)
     {
 
-<<<<<<< HEAD
-        // -----------------------------------------------------------------Pruebas
-
-        var user = _context.Usuarios.FirstOrDefault(f=>f.Nombre == username && f.Contraseña == password);
-
-        if(user!=null){
-            return RedirectToAction("Privacy", "Home");
-        }else{
-            return RedirectToAction("Index", "Users");
-        }
-
-        // ----------------------------------------------------------------Fin de Pruebas
-=======
     public IActionResult Signup()
     {
         return View();
->>>>>>> 10189582d5547e03ecff5dd36e506b6cd9a7fdd3
     }
 
 
