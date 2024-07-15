@@ -253,19 +253,23 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Lifepaper.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "E:\\CopiaPC\\Riwi\\Lifepaper\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Lifepaper.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Lifepaper.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Lifepaper.props",
       "PackagePath": "build\\Lifepaper.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Lifepaper.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Lifepaper.props",
       "PackagePath": "buildMultiTargeting\\Lifepaper.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Lifepaper.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Lifepaper.props",
       "PackagePath": "buildTransitive\\Lifepaper.props"
     }
   ],

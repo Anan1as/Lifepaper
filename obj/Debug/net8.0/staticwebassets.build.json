@@ -8,7 +8,7 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Lifepaper/wwwroot",
+      "Name": "Lifepaper\\wwwroot",
       "Source": "Lifepaper",
       "ContentRoot": "/home/riwip5-034/Documents/Lifepaper/wwwroot/",
       "BasePath": "_content/Lifepaper",
@@ -90,7 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/site.css"
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/favicon.ico",
@@ -109,7 +109,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.ico"
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/img/logo.png",
@@ -147,7 +147,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/site.js"
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
@@ -166,7 +166,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
@@ -185,7 +185,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
@@ -204,7 +204,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
@@ -223,7 +223,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
@@ -242,7 +242,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
@@ -261,7 +261,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
@@ -280,7 +280,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
@@ -299,7 +299,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
@@ -318,7 +318,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
@@ -337,7 +337,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
@@ -356,7 +356,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
@@ -375,7 +375,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
@@ -394,7 +394,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
@@ -413,7 +413,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
@@ -432,7 +432,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
@@ -451,7 +451,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
@@ -470,7 +470,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
@@ -489,7 +489,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
@@ -508,7 +508,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
@@ -527,7 +527,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
@@ -546,7 +546,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
@@ -565,7 +565,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
@@ -584,7 +584,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
@@ -603,7 +603,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
@@ -622,7 +622,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
@@ -641,7 +641,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
@@ -660,7 +660,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
@@ -679,7 +679,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
@@ -698,7 +698,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
@@ -717,7 +717,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
@@ -736,7 +736,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
@@ -755,7 +755,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
@@ -774,7 +774,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
@@ -793,7 +793,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
@@ -812,7 +812,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
@@ -831,7 +831,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
@@ -850,7 +850,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
@@ -869,7 +869,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
@@ -888,7 +888,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
@@ -907,7 +907,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
@@ -926,7 +926,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
@@ -945,7 +945,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
@@ -964,7 +964,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
@@ -983,7 +983,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/bootstrap/LICENSE",
@@ -1002,7 +1002,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
@@ -1021,7 +1021,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
@@ -1040,7 +1040,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
@@ -1059,7 +1059,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/jquery-validation/dist/additional-methods.js",
@@ -1078,7 +1078,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
@@ -1097,7 +1097,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
@@ -1116,7 +1116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
@@ -1135,7 +1135,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/jquery-validation/LICENSE.md",
@@ -1154,7 +1154,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/jquery/dist/jquery.js",
@@ -1173,7 +1173,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/jquery/dist/jquery.min.js",
@@ -1192,7 +1192,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/jquery/dist/jquery.min.map",
@@ -1211,7 +1211,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
       "Identity": "/home/riwip5-034/Documents/Lifepaper/wwwroot/lib/jquery/LICENSE.txt",
@@ -1230,7 +1230,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     }
   ]
 }
