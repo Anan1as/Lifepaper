@@ -482,3 +482,8 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+obj/Debug/net8.0/Lifepaper.AssemblyInfo.cs
+obj/Debug/net8.0/Lifepaper.AssemblyInfoInputs.cache
+obj/Debug/net8.0/Lifepaper.assets.cache
+obj/Debug/net8.0/Lifepaper.csproj.AssemblyReference.cache
+obj/Debug/net8.0/Lifepaper.GeneratedMSBuildEditorConfig.editorconfig
