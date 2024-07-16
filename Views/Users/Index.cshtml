@@ -3,7 +3,45 @@
     ViewData["Title"] = "Login";
 }
 
-<link rel="stylesheet" href="/css/signin.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/css/signin.css">
+    <meta name="google-signin-client_id"
+        content="1071142487355-mp3rj6u4h7b7dscdq0ou904jddflc82j.apps.googleusercontent.com">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script>
+        function handleCredentialResponse(response) {
+            fetch('/Users/GoogleSignIn', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ token: response.credential })
+            }).then(response => {
+                if (response.ok) {
+                    window.location.href = "/Users/Welcome";
+                } else {
+                    console.error('Error al iniciar sesión con Google');
+                }
+            });
+        }
+
+        window.onload = function () {
+            google.accounts.id.initialize({
+                client_id: '1071142487355-mp3rj6u4h7b7dscdq0ou904jddflc82j.apps.googleusercontent.com',
+                callback: handleCredentialResponse
+            });
+            google.accounts.id.renderButton(
+                document.getElementById("google-signin-button"),
+                { theme: "outline", size: "large" } // opciones de personalización
+            );
+            google.accounts.id.prompt(); // opcionalmente mostrar el One Tap
+        }
+    </script>
+</head>
 
 <body class="align">
     <div class="grid">
@@ -34,6 +72,7 @@
             </div>
             <p class="text--center"><a href="#" id="forgotPasswordLink">Forgot Password?</a></p>
         </form>
+        <div id="google-signin-button"></div>
         <p class="text--center">Not a member? <a href="#">Sign up now</a>
             <svg class="icon">
                 <use xlink:href="#icon-arrow-right"></use>
@@ -70,3 +109,5 @@
 
     <script src="/js/passwordRecovery.js"></script>
 </body>
+
+</html>
