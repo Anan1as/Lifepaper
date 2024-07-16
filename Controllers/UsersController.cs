@@ -18,29 +18,26 @@ public class UsersController : Controller
         return View();
     }
 
+    [HttpGet]
+    public IActionResult SignIn()
+    {
+        return RedirectToAction("Privacy", "Home");
+    }
+
     public IActionResult SignIn(string username, string password)
     {
-<<<<<<< HEAD
-=======
-
-        // -----------------------------------------------------------------Pruebas
-
->>>>>>> 527690bff76cda2fc656ea47e2d4ccbd60818019
-        var user = _context.Usuarios.FirstOrDefault(f=>f.Nombre == username && f.Contraseña == password);
-        if(user!=null){
+        var user = _context.Usuarios.FirstOrDefault(f => f.Nombre == username && f.Contraseña == password);
+        if (user != null)
+        {
             return RedirectToAction("Privacy", "Home");
-        }else{
+        }
+        else
+        {
             return RedirectToAction("Error", "Home");
         }
     }
 
-<<<<<<< HEAD
     [HttpGet]
-=======
-        // ----------------------------------------------------------------Fin de Pruebas
-    }
-
->>>>>>> 527690bff76cda2fc656ea47e2d4ccbd60818019
     public IActionResult Signup()
     {
         return View();
@@ -54,7 +51,7 @@ public class UsersController : Controller
             user.FechaRegistro = DateTime.Now;
             _context.Usuarios.Add(user);
             _context.SaveChanges();
-            return RedirectToAction("Home");
+            return RedirectToAction("Index","Home");
         }
         return RedirectToAction("Error", "Home");
     }

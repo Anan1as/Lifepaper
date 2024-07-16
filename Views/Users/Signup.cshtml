@@ -2,7 +2,7 @@
     Layout = null;
     ViewData["Title"] = "Registro";
 }
-@model User
+@model Usuario
 
 
 <link rel="stylesheet" href="/css/Signup.css">
@@ -13,7 +13,7 @@
 
         <form asp-action="Signup" asp-controller="Users" method="post" class="form login">
             
-            <img src="/img/Words.png" alt="">
+            <img src="/img/Words.png">
 
             <div class="form__field">
                 <label for="singup__name"><svg class="icon">
@@ -40,7 +40,7 @@
                 <label for="singup__password"><svg class="icon">
                     </svg><span class="hidden">Contraseña</span></label>
                 <input asp-for="Contraseña" id="singup__password" type="password" name="password" class="form__input"
-                    placeholder="Password" required>
+                    placeholder="Contraseña" required>
             </div>
 
             <div class="form__field">
@@ -51,12 +51,12 @@
             </div>
 
             <div class="form__field">
-                <input type="submit" value="Iniciar sesión">
+                <input type="submit" value="Crear Cuenta">
             </div>
 
         </form>
 
-        <p class="text--center">¿Ya eres miembro? <a href="#">Inicia sesión</a> <svg class="icon">
+        <p class="text--center">¿Ya eres miembro? <a asp-controller="Users" asp-action="SignIn">Inicia sesión</a> <svg class="icon">
                 <use xlink:href="#icon-arrow-right"></use>
             </svg></p>
 
