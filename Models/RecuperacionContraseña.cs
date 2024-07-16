@@ -2,6 +2,6 @@ namespace Lifepaper.Models
 {
     public class RecuperacionContraseñaRequest
     {
-        public string Correo { get; set; }
+        public string? Correo { get; set; }
     }
 }

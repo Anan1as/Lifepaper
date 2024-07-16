@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 using Lifepaper.Data;
 using Lifepaper.Models;
 using Lifepaper.Services;
@@ -28,14 +27,14 @@ namespace Lifepaper.Controllers.Api
                 return BadRequest("El correo electrónico es requerido.");
             }
 
-            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Correo == request.Correo);
+            var usuario = await _context.Users.FirstOrDefaultAsync(u => u.Correo == request.Correo);
             if (usuario == null)
             {
                 return NotFound("No se encontró un usuario con este correo.");
             }
 
             var emailSubject = "Recuperación de contraseña";
-            var emailBody = $"Su contraseña es: {usuario.Contraseña}"; 
+            var emailBody = $"Su contraseña es: {usuario.Contraseña}";
             await _emailService.SendAsync(request.Correo, emailSubject, emailBody);
 
             return Ok("Correo enviado con éxito.");
