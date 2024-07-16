@@ -20,6 +20,12 @@ public class UsersController : Controller
 
     public IActionResult SignIn(string username, string password)
     {
+<<<<<<< HEAD
+=======
+
+        // -----------------------------------------------------------------Pruebas
+
+>>>>>>> 527690bff76cda2fc656ea47e2d4ccbd60818019
         var user = _context.Usuarios.FirstOrDefault(f=>f.Nombre == username && f.Contraseña == password);
         if(user!=null){
             return RedirectToAction("Privacy", "Home");
@@ -28,7 +34,13 @@ public class UsersController : Controller
         }
     }
 
+<<<<<<< HEAD
     [HttpGet]
+=======
+        // ----------------------------------------------------------------Fin de Pruebas
+    }
+
+>>>>>>> 527690bff76cda2fc656ea47e2d4ccbd60818019
     public IActionResult Signup()
     {
         return View();
