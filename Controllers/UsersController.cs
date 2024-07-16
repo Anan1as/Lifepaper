@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Lifepaper.Data;
-using System.Linq;
+using Lifepaper.Models;
 
 namespace Lifepaper.Controllers;
 
@@ -20,23 +20,31 @@ public class UsersController : Controller
 
     public IActionResult SignIn(string username, string password)
     {
+        var user = _context.Usuarios.FirstOrDefault(f=>f.Nombre == username && f.Contraseña == password);
+        if(user!=null){
+            return RedirectToAction("Privacy", "Home");
+        }else{
+            return RedirectToAction("Error", "Home");
+        }
+    }
 
+    [HttpGet]
     public IActionResult Signup()
     {
         return View();
     }
 
-
     [HttpPost]
-    public IActionResult Signup(User user)
+    public IActionResult Signup(Usuario user)
     {
         if (ModelState.IsValid)
         {
-        user.FechaRegistro = DateTime.Now;
-        _context.Users.Add(user);
-        _context.SaveChanges();
-        return RedirectToAction("Home");
+            user.FechaRegistro = DateTime.Now;
+            _context.Usuarios.Add(user);
+            _context.SaveChanges();
+            return RedirectToAction("Home");
         }
+        return RedirectToAction("Error", "Home");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

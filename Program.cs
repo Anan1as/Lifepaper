@@ -1,12 +1,8 @@
-using System;
 using Lifepaper.Data;
 using Lifepaper.Models;
 using Lifepaper.Services;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
@@ -26,14 +22,6 @@ builder.Services.AddDbContext<BaseContext>(options =>
 // Agregar servicios
 builder.Services.AddScoped<EmailService>();
 builder.Services.AddControllers();
-
-// google Authentication Service
-/* services.AddAuthentication().AddGoogle(googleOptions =>
-{
-    googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
-    googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
-}); */
-
 
 var app = builder.Build();
 

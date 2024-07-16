@@ -1,6 +1,5 @@
 using Lifepaper.Models;
 using Microsoft.EntityFrameworkCore;
-using Lifepaper.Models;
 
 namespace Lifepaper.Data
 {
@@ -8,8 +7,8 @@ namespace Lifepaper.Data
     {
         public BaseContext(DbContextOptions<BaseContext> options) : base(options) { }
 
+        public DbSet<User> Users { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
-        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

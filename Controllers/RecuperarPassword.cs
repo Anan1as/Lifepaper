@@ -27,7 +27,7 @@ namespace Lifepaper.Controllers.Api
                 return BadRequest("El correo electrónico es requerido.");
             }
 
-            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Correo == request.Correo);
+            var usuario = await _context.Users.FirstOrDefaultAsync(u => u.Correo == request.Correo);
             if (usuario == null)
             {
                 return NotFound("No se encontró un usuario con este correo.");
